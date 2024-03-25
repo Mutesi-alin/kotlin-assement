@@ -3,7 +3,13 @@
 fun main() {
     sentence("Barnie bakes brown bagelsand buns")
     area(56,10)
-    isPalindrome("hello word")
+
+
+    val str1 = "aline"
+    val str2 = "mutesi"
+
+    println("$str1 is palindrome: ${isPalindrome(str1)}")
+    println("$str2 is palindrome: ${isPalindrome(str2)}")
 
 
 }
@@ -31,11 +37,12 @@ fun area(radius:Int,pi:Int){
 }
 fun isPalindrome(word: String): Boolean{
 
-    if ("string, is palindrome"){
-        println(true)
-    }
-    else println(false)
+
+    fun isPalindrome(str: String): Boolean {
+        val cleanStr = str.toLowerCase().replace(Regex("[^a-zA-Z0-9]"), "")
+        return cleanStr == cleanStr.reversed()
 }
+
 
 
 
