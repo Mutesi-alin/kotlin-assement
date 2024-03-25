@@ -4,12 +4,7 @@ fun main() {
     sentence("Barnie bakes brown bagelsand buns")
     area(56,10)
 
-
-    val str1 = "aline"
-    val str2 = "mutesi"
-
-    println("$str1 is palindrome: ${isPalindrome(str1)}")
-    println("$str2 is palindrome: ${isPalindrome(str2)}")
+isPalindrome("mutesi aline")
 
 
 }
@@ -19,9 +14,10 @@ fun sentence (word:String){
             word.removePrefix("b")
     println(word)
 
+
 }
 
-fun new  (numbers:Int){
+fun num  (numbers:Int){
     val statistics= arrayOf(12,34,76,78,90,34,14,23)
     println(statistics(average))
     println(sum().toInt/statistics.size)
@@ -38,10 +34,15 @@ fun area(radius:Int,pi:Int){
 fun isPalindrome(word: String): Boolean{
 
 
-    fun isPalindrome(str: String): Boolean {
-        val cleanStr = str.toLowerCase().replace(Regex("[^a-zA-Z0-9]"), "")
-        return cleanStr == cleanStr.reversed()
+    val str1 = "aline"
+    val str2 = "mutesi"
+
+    println("$str1 is palindrome: ${isPalindrome(str1)}")
+    println("$str2 is palindrome: ${isPalindrome(str2)}")
+
+
 }
+
 
 
 
