@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
     sentence("Barnie bakes brown bagelsand buns")
-    area(56,10)
+    area(56,3.14)
 
     val str1 = "aline"
     val str2 = "mutesi"
@@ -31,9 +31,9 @@ fun num  (numbers:Int){
 }
 
 
-fun area(radius:Int,pi:Int){
+fun area(radius:Int,pi:Double){
 
-    var volume= 4/3π r3
+    var volume= 4/3 *3.14 *3 *3*3
     println(volume)
 
 }
